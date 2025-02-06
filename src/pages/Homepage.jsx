@@ -70,8 +70,8 @@ const Homepage = () => {
             <img src={project2} alt="Project 2" className="portfolio-image" />
             <img src={project3} alt="Project 3" className="portfolio-image" />
             <img src={project4} alt="Project 4" className="portfolio-image" />
-            <img src={demoproject1} alt="Project 3" className="portfolio-image" />
-            <img src={demoproject2} alt="Project 3" className="portfolio-image" />
+            <img src={demoproject1} alt="Rip Out 1" className="portfolio-image" />
+            <img src={demoproject2} alt="Rip Out 2" className="portfolio-image" />
         
             {/* <img src={project4} alt="Project 3" className="portfolio-image" /> */}
           </div>
