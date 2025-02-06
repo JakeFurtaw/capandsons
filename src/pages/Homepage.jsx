@@ -10,6 +10,15 @@ import logo from '../images/Logo.jpg';
 const Homepage = () => {
   return (
     <div className="min-h-screen bg-white">
+      {/* Nav Section */}
+      <nav className="sticky-nav">
+        <div className="nav-content">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
       {/* Hero Section */}
       <div className="hero-section">
         <div className="hero-overlay">
@@ -32,19 +41,19 @@ const Homepage = () => {
           <div className="services-grid">
             <div className="service-card">
               <h3 className="service-title">Swimming Pool Excavation</h3>
-              <p className="service-description">Professional excavation services for residential and commercial swimming pools.</p>
+              <p className="service-description">Expert excavation for in-ground pools of all sizes. We handle soil testing, precise grading, and proper drainage installation to ensure your pool's long-term stability.</p>
             </div>
-            {/* <div className="service-card">
-              <h3 className="service-title">Site Preparation</h3>
-              <p className="service-description">Complete site preparation including grading and soil analysis.</p>
-            </div> */}
+            <div className="service-card">
+              <h3 className="service-title">Demolition</h3>
+              <p className="service-description">Professional pool removal and site restoration services. We handle complete demolition, proper fill-in, and prepare your yard for its next purpose - whether that's landscaping or new construction.</p>
+            </div>
             <div className="service-card">
               <h3 className="service-title">Snow Removal</h3>
-              <p className="service-description">Residential and Commercial snow removal services.</p>
+              <p className="service-description">24/7 winter weather response for homes and businesses. Our fleet handles everything from light snowfall to major storms, including plowing, salting, and ice management.</p>
             </div>
             <div className="service-card">
               <h3 className="service-title">Tennis, Volleyball, and Basketball Court</h3>
-              <p className="service-description">Expert residential multi-sport court site excavation and site preparation services.</p>
+              <p className="service-description">Complete court construction preparation including surveying, precise leveling, and proper drainage systems. We ensure perfect playing surfaces for any sport court installation.</p>
             </div>
           </div>
         </div>
@@ -72,7 +81,7 @@ const Homepage = () => {
               <div className="contact-info">
                 <div className="contact-item">
                   <Phone className="contact-icon" />
-                  <p>(555) 123-4567</p>
+                  <p>(443) 878-7464</p>
                 </div>
                 <div className="contact-item">
                   <Mail className="contact-icon" />
@@ -80,43 +89,21 @@ const Homepage = () => {
                 </div>
                 <div className="contact-item">
                   <MapPin className="contact-icon" />
-                  <p>123 Main Street, Anytown, USA</p>
+                  <p>Eldersburg, MD</p>
                 </div>
-                <div className="social-icons">
+                {/* <div className="social-icons">
                   <Facebook className="contact-icon cursor-pointer" />
                   <Instagram className="contact-icon cursor-pointer" />
-                </div>
+                </div> */}
               </div>
-              
-              <form className="form">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="form-input"
-                />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="form-input"
-                />
-                <textarea
-                  placeholder="Your Message"
-                  rows="4"
-                  className="form-input"
-                ></textarea>
-                <button className="submit-button">
-                  Send Message
-                </button>
-              </form>
             </div>
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>© 2025 Cap & Sons Excavation. All rights reserved.</p>
+          <p>© 2024 Cap & Sons Excavation. All rights reserved.</p>
         </div>
       </footer>
     </div>

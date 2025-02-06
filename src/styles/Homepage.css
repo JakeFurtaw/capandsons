@@ -49,7 +49,7 @@ body {
 .hero-image {
   position: relative;
   align-content: center;
-  width: 100vw;
+  width: 60vw;
   height: 35vh;
 }
 
@@ -76,6 +76,34 @@ body {
   background-color: #0056b3;
 }
 
+/* Nav Section */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: rgba(51, 51, 51, 0.95);
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-content a:hover {
+  color: #007bff;
+}
+
 /* Section Styles */
 .section {
   padding: 4rem 0;
@@ -95,7 +123,7 @@ body {
 /* Services Section */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -125,14 +153,16 @@ body {
 /* Portfolio Section */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
 }
 
 .portfolio-image {
   width: 100%;
   border-radius: 8px;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
 
 .portfolio-image:hover {
@@ -142,14 +172,8 @@ body {
 /* Contact Section */
 .contact-container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.contact-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
 .contact-info {
@@ -166,33 +190,16 @@ body {
 .contact-icon {
   color: #007bff;
   font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2);
 }
 
 .social-icons {
   display: flex;
   gap: 1rem;
-}
-
-.form {
-  flex: 1;
-}
-
-.form-input {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.submit-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
@@ -209,4 +216,30 @@ body {
 
 .footer-content {
   font-size: 0.875rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Mobile Section */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-image {
+    width: 90vw;
+    height: auto;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  
+  .nav-content {
+    gap: 1rem;
+  }
 }
