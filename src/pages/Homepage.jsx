@@ -43,7 +43,7 @@ const Homepage = () => {
           <div className="services-grid">
             <div className="service-card">
               <h3 className="service-title">Swimming Pool Excavation</h3>
-              <p className="service-description">Expert excavation for in-ground pools of all sizes. We handle soil testing, precise grading, and proper drainage installation to ensure your pool's long-term stability.</p>
+              <p className="service-description">Expert excavation for in-ground pools of all sizes. We handle excavation, precise grading, and proper site drainage to ensure your pool's long-term stability.</p>
             </div>
             <div className="service-card">
               <h3 className="service-title">Demolition</h3>
@@ -55,7 +55,7 @@ const Homepage = () => {
             </div>
             <div className="service-card">
               <h3 className="service-title">Tennis, Volleyball, and Basketball Court</h3>
-              <p className="service-description">Complete court construction preparation including surveying, precise leveling, and proper drainage systems. We ensure perfect playing surfaces for any sport court installation.</p>
+              <p className="service-description">Complete court construction preparation including surveying, precise leveling, and proper grading. We ensure perfect playing surfaces for any sport court installation.</p>
             </div>
           </div>
         </div>
