@@ -5,7 +5,9 @@ import project1 from '../images/IMG_0894.jpeg';
 import project2 from '../images/IMG_0910.jpeg';
 import project4 from '../images/IMG_1117.jpeg';
 import project3 from '../images/IMG_3903.jpeg';
-import logo from '../images/Logo.jpg';
+import demoproject1 from '../images/IMG_0104.jpg';
+import demoproject2 from '../images/IMG_0205.jpg';
+import logo from '../images/logo.webp';
 
 const Homepage = () => {
   return (
@@ -25,8 +27,8 @@ const Homepage = () => {
           <div className="hero-content">
             <img className="hero-image" src={logo} alt="Logo" />
             {/* <h1 className="hero-title">Cap & Sons Excavation Corp.</h1> */}
-            <h3 className="hero-subtitle">Earth Shapers</h3>
-            <p className="hero-subtitle">Get us on the phone today and lets talk about how we can transform your backyard into paradise.</p>
+            {/* <h3 className="hero-subtitle">Earth Shapers</h3> */}
+            <p className="hero-subtitle">Get us on the phone today and let's discuss how we can transform your backyard into paradise.</p>
             <a href="#contact" className="cta-button">
               Get a Free Quote
             </a>
@@ -67,6 +69,10 @@ const Homepage = () => {
             <img src={project1} alt="Project 1" className="portfolio-image" />
             <img src={project2} alt="Project 2" className="portfolio-image" />
             <img src={project3} alt="Project 3" className="portfolio-image" />
+            <img src={project4} alt="Project 4" className="portfolio-image" />
+            <img src={demoproject1} alt="Project 3" className="portfolio-image" />
+            <img src={demoproject2} alt="Project 3" className="portfolio-image" />
+        
             {/* <img src={project4} alt="Project 3" className="portfolio-image" /> */}
           </div>
         </div>
