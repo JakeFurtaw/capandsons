@@ -109,13 +109,13 @@ body {
 /* Section Styles */
 .section {
   padding: 4rem 0;
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 .section-gray {
   background-color: #f9f9f9;
   padding: 4rem 0;
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 .section-title {
