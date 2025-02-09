@@ -167,11 +167,12 @@ body {
   border-radius: 8px;
   transition: transform 0.3s ease;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
 }
-
 .portfolio-image:hover {
   transform: scale(1.5);
-  align-items: center;
+  z-index: 2;
 }
 
 /* Contact Section */
@@ -230,6 +231,17 @@ html {
 
 /* Mobile Section */
 @media (max-width: 768px) {
+  
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .portfolio-image:hover {
+    transform: scale(1.05); /* Even smaller scale on mobile */
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
   }
