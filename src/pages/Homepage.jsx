@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, Facebook, Clock, Shield, Award } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, Clock, Shield, Award, WavesLadder, Trash2, Snowflake, Volleyball } from 'lucide-react';
 import '../styles/Homepage.css';
 import project1 from '../images/IMG_0894.jpeg';
 import project2 from '../images/IMG_0910.jpeg';
@@ -38,25 +38,30 @@ const Homepage = () => {
 
       {/* Services Section */}
       <section className="section-gray" id="services">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title">Our Services</h2>
-          <div className="services-grid">
-            <div className="service-card">
-              <h3 className="service-title">Swimming Pool Excavation</h3>
-              <p className="service-description">Expert excavation for in-ground pools of all sizes. We handle excavation, precise grading, and proper site drainage to ensure your pool's long-term stability.</p>
-            </div>
-            <div className="service-card">
-              <h3 className="service-title">Demolition</h3>
-              <p className="service-description">Professional pool removal and site restoration services. We handle complete demolition, proper fill-in, and prepare your yard for its next purpose - whether that's landscaping or new construction.</p>
-            </div>
-            <div className="service-card">
-              <h3 className="service-title">Snow Removal</h3>
-              <p className="service-description">24/7 winter weather response for homes and businesses. Our fleet handles everything from light snowfall to major storms, including plowing, salting, and ice management.</p>
-            </div>
-            <div className="service-card">
-              <h3 className="service-title">Tennis, Volleyball, and Basketball Court</h3>
-              <p className="service-description">Complete court construction preparation including surveying, precise leveling, and proper grading. We ensure perfect playing surfaces for any sport court installation.</p>
-            </div>
+      <h2 className="section-title">Our Services</h2>
+        <div className="services-grid">
+          <div className="service-card">
+            <WavesLadder className="service-icon" />
+            <h3 className="service-title">Swimming Pool Excavation</h3>
+            <p className="service-description">Expert excavation for in-ground pools of all sizes. We handle excavation, precise grading, and proper site drainage to ensure your pool's long-term stability.</p>
+          </div>
+          
+          <div className="service-card">
+            <Trash2 className="service-icon" />
+            <h3 className="service-title">Demolition</h3>
+            <p className="service-description">Professional pool removal and site restoration services. We handle complete demolition, proper fill-in, and prepare your yard for its next purpose - whether that's landscaping or new construction.</p>
+          </div>
+          
+          <div className="service-card">
+            <Snowflake className="service-icon" />
+            <h3 className="service-title">Snow Removal</h3>
+            <p className="service-description">24/7 winter weather response for homes and businesses. Our fleet handles everything from light snowfall to major storms, including plowing, salting, and ice management.</p>
+          </div>
+          
+          <div className="service-card">
+            <Volleyball className="service-icon" />
+            <h3 className="service-title">Tennis, Volleyball, and Basketball Court</h3>
+            <p className="service-description">Complete court construction preparation including surveying, precise leveling, and proper grading. We ensure perfect playing surfaces for any sport court installation.</p>
           </div>
         </div>
       </section>
