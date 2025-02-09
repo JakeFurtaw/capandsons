@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Facebook, Clock, Shield, Award } from 'lucide-react';
 import '../styles/Homepage.css';
 import project1 from '../images/IMG_0894.jpeg';
 import project2 from '../images/IMG_0910.jpeg';
@@ -77,9 +77,33 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      
+      {/* Why Choose Us Section */}
+      <section className="section-gray">
+        <div className="container">
+          <h2 className="section-title">Why Choose Cap & Sons</h2>
+          <div className="features-grid">
+            <div className="feature-item">
+              <Clock className="feature-icon" />
+              <h3>20+ Years Experience</h3>
+              <p>Decades of expertise in excavation and site work</p>
+            </div>
+            <div className="feature-item">
+              <Shield className="feature-icon" />
+              <h3>Licensed & Insured</h3>
+              <p>Fully licensed and insured for your peace of mind</p>
+            </div>
+            <div className="feature-item">
+              <Award className="feature-icon" />
+              <h3>Quality Guaranteed</h3>
+              <p>Commitment to excellence in every project</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Contact Section */}
-      <section className="section-gray" id="contact">
+      <section className="section" id="contact">
         <div className="container mx-auto px-4">
           <h2 className="section-title">Contact Us</h2>
           <div className="contact-container">
